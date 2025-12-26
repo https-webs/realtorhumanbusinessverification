@@ -1,0 +1,127 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, Arial, sans-serif;
+  background: #fff;
+  color: #202124;
+}
+
+.card {
+  width: 100%;
+  max-width: 448px;
+  padding: 48px 40px 36px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  animation: slideIn .3s ease;
+}
+
+.logo { width: 100px; margin-bottom: 16px;}
+.logo.small { width: 100px; }
+
+h1 { font-size: 23px; font-weight: 400; margin: 0; }
+.subtitle { margin: 8px 0 24px; font-size: 14px; }
+
+.title{
+  font-size: 12px;
+}
+.input-group {
+  position: relative;
+  margin-top: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 16px 12px;
+  font-size: 16px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+}
+
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 0 4px;
+  color: #5f6368;
+  pointer-events: none;
+  transition: .2s;
+}
+
+.input-group input:focus {
+  border: 2px solid #1a73e8;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #1a73e8;
+}
+
+.link {
+  color: #1a73e8;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.info {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.actions {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.show {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.account {
+  margin: 12px 0 20px;
+  padding: 8px 12px;
+  border: 1px solid #dadce0;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.demo {
+  margin-top: 20px;
+  color: #d93025;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (max-width: 480px) {
+  .card {
+    border: none;
+    padding: 24px;
+  }
+}

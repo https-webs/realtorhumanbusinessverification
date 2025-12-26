@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verification Successful</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        background: #f1f3f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        background: #ffffff;
+        width: 100%;
+        max-width: 420px;
+        padding: 48px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        text-align: center;
+        animation: slideUp 0.5s ease;
+    }
+
+    .badge {
+        width: 96px;
+        height: 96px;
+        background: #e6f4ea;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 24px;
+    }
+
+    .badge svg {
+        width: 48px;
+        height: 48px;
+        stroke: #1e8e3e;
+        stroke-width: 2.5;
+    }
+
+    h1 {
+        font-size: 22px;
+        font-weight: 500;
+        color: #202124;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #5f6368;
+        line-height: 1.6;
+        margin-bottom: 32px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        border-radius: 24px;
+        border: none;
+        background: #1a73e8;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+    button:hover {
+        background: #1558b0;
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="badge">
+        <!-- Google-style verified check -->
+        <svg viewBox="0 0 24 24" fill="none">
+            <path d="M20 6L9 17L4 12"></path>
+        </svg>
+    </div>
+
+    <h1>Verification complete</h1>
+    <p>
+        Your business activity has been verified and confirmed successfully.  
+        You can now continue your business with your realtor.com customer.
+    </p>
+
+    <button onclick="done()">Done</button>
+</div>
+
+<script>
+    function done() {
+        // Example redirect
+        alert("Verification successful");
+        // window.location.href = "home.html";
+    }
+</script>
+
+</body>
+</html>
